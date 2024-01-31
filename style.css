@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+/* Añadimos estilos más románticos al botón */
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff0066;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos específicos para el botón "No" */
+#noBtn {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo al pasar el cursor sobre el botón "No" */
+#noBtn:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el texto "Me perdonas" */
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+  
+
+.button-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+#noBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.container:hover #noBtn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container #noBtn:hover {
+    left: 40%;
+    transform: translateX(-50%);
+}
